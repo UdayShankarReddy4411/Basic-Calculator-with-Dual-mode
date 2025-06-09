@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Calculator with Dual modes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator light" id="calculator">
+    <div class="container">
+      <input type="checkbox" name="checkbox" id="checkbox"/>
+      <label for="checkbox" class="label"></label>
+    </div>
+    <div class="display">
+      <div class="result" id="result">0</div>
+      <div class="calculation" id="calculation"></div>
+    </div>
+    <div class="buttons">
+      <button class="btn" onclick="insertNumber('7')">7</button>
+      <button class="btn" onclick="insertNumber('8')">8</button>
+      <button class="btn" onclick="insertNumber('9')">9</button>
+      <button class="btn operator divide" onclick="insertOperator('/')">/</button>
+      <button class="btn" onclick="insertNumber('4')">4</button>
+      <button class="btn" onclick="insertNumber('5')">5</button>
+      <button class="btn" onclick="insertNumber('6')">6</button>
+      <button class="btn operator" onclick="insertOperator('*')">×</button>
+      <button class="btn" onclick="insertNumber('1')">1</button>
+      <button class="btn" onclick="insertNumber('2')">2</button>
+      <button class="btn" onclick="insertNumber('3')">3</button>
+      <button class="btn operator" onclick="insertOperator('-')">-</button>
+      <button class="btn" onclick="insertNumber('0')">0</button>
+      <button class="btn double" onclick="insertNumber('00')">00</button>
+      <button class="btn operator" onclick="insertOperator('+')">+</button>
+      <button class="btn function" onclick="clearAll()">AC</button>
+      <button class="btn function" onclick="clearEntry()">C</button>
+      <button class="btn operator double" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
